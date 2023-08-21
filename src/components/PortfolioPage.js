@@ -61,8 +61,9 @@ const PortfolioPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
+            key={video.title}
           >
-            <FadeInStagger key={video.title}>
+            <FadeInStagger>
               <VideoThumbnail
                 key={index}
                 video={video}
