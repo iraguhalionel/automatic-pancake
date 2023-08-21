@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Rawengulk';
+  src: url('fonts/RawengulkRegular-webfont.eot');
+  src: url('fonts/RawengulkRegular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RawengulkRegular-webfont.woff') format('woff'),
+    url('fonts/RawengulkRegular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Rawengulk';
+  src: url('fonts/RawengulkBold-webfont.eot');
+  src: url('fonts/RawengulkBold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RawengulkBold-webfont.woff') format('woff'),
+    url('fonts/RawengulkBold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+
+

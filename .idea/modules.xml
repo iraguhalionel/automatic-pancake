@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/adamwathanss-tuibeta/react/components/.idea/components.iml" filepath="$USER_HOME$/Downloads/adamwathanss-tuibeta/react/components/.idea/components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TailwindUI templates/tailwindui-salient/.idea/tailwindui-salient.iml" filepath="$PROJECT_DIR$/../../TailwindUI templates/tailwindui-salient/.idea/tailwindui-salient.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/tailwindui-edited/templates/tailwindui-studio/.idea/tailwindui-studio.iml" filepath="$USER_HOME$/Downloads/tailwindui-edited/templates/tailwindui-studio/.idea/tailwindui-studio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yato-web.iml" filepath="$PROJECT_DIR$/.idea/yato-web.iml" />
+    </modules>
+  </component>
+</project>
