@@ -84,8 +84,8 @@ function DeviceArrowIcon(props) {
 
 function Home() {
   return (
-    <div>
-      <Navigation />
+    <div className="bg-black">
+      <Navigation className="text-white" />
       <Container>
         <PortfolioPage />
       </Container>

@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import VideoThumbnail from './VideoThumbnail';
 import VideoModal from './VideoModal';
 import {FadeInStagger} from "@/components/FadeIn";
-
-
 import { motion, useReducedMotion } from 'framer-motion'
 
 const videos = [

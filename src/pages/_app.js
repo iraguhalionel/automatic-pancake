@@ -35,7 +35,8 @@ export default function App({ Component, pageProps }) {
         outerAlpha={0}
         hasBlendMode={true}
         innerStyle={{
-          backgroundColor: 'var(--cursor-color)'
+          backgroundColor: 'var(--cursor-color)',
+          marginTop: '1.5rem'
         }}
         outerStyle={{
           border: '1px solid var(--cursor-color)'

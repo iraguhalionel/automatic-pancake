@@ -17,6 +17,7 @@ import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter,
 import Link from "next/link";
 import DarkLogo from "@/components/darkLogo";
 import Hatana from "./../images/Hatana_Teaser_Video_without_coming_soon.mp4"
+import PortfolioPage from "@/components/PortfolioPage";
 
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -59,7 +60,7 @@ function Home() {
     <>
       <PreLoader />
       <div className="section bg-white isolate">
-        <Navigation className="lg:hidden lg:bg- sm:bg-white text-black" />
+        <Navigation className="lg:hidden sm:bg-white text-black" />
         <Navigation className="navbar lg:block hidden" />
         <div>
           <main>
@@ -84,6 +85,10 @@ ourselves as all of the above. But we prefer to be strategists.
               </div>
             </section>
             <section className="bg-black text-white">
+              <PortfolioPage />
+            </section>
+
+            {/*<section>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:relative">
                 <div className="mx-auto max-w-2xl lg:max-w-6xl lg:px-12" ref={paragraph2}>
                   <div className="panel red grid lg:grid-cols-3 grid-cols-1 gap-x-8 items-center lg:justify-evenly lg:pt-32 py-16 gap-8">
@@ -118,7 +123,7 @@ ourselves as all of the above. But we prefer to be strategists.
                         </span>
                       </div>
                     </div>
-                    <div className="rlg:elative text-center">
+                    <div className="lg:relative text-center">
                       <div className="w-64">
                         <Image
                           alt="Production"
@@ -155,27 +160,27 @@ ourselves as all of the above. But we prefer to be strategists.
                 </div>
 
               </div>
-            </section>
+            </section>*/}
             <section className="snap-start bg-black text-white">
-              <video autoPlay muted className="bg-cover w-full">
+              {/*<video autoPlay muted className="bg-cover w-full">
                 <source src={Hatana} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video>*/}
 
               <div className="mx-auto max-w-2xl lg:max-w-7xl">
-                <div className="grid lg:grid-cols-4 gap-8 mx-8 items-center justify-between py-12">
-                  <div className="flex items-center space-x-3">
+                <div className="flex gap-8 mx-8 items-center justify-between py-12">
+                  <div className="flex items-center space-x-4">
                     <Location />
-                    <Link href="#" className="font-light text-sm underline">Irembo House, 72 KN 5 Rd,<br />
-Plot #588 Remera-Kisimenti</Link>
+                    <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm underline">Irembo House, 72 KN 5 Rd,<br />
+Plot #588 Remera-Kisimenti</a>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-4">
                     <Phone />
-                    <span className="font-light text-sm"><a href="#">+250 791 570 011</a><br/><a href="#">+250 788 319 228</a></span>
+                    <span className="font-light text-sm flex gap-2"><a href="tel:+250 791 570 011">+250 791 570 011</a>/<a href="tel:+250 788 319 228">+250 788 319 228</a></span>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-4">
                     <Mail />
-                    <Link href="#" className="font-light text-sm">ikaze@yato.rw</Link>
+                    <a href="mailto:ikaze@yato.rw" className="font-light text-sm underline">ikaze@yato.rw</a>
                   </div>
                   <div className="relative">
                     <div className="flex space-x-6 items-center">
@@ -198,10 +203,10 @@ Plot #588 Remera-Kisimenti</Link>
                   </div>
                 </div>
               </div>
-
               <Imigongo
                 className="bg-cover w-screen h-[24px]  bg-black opacity-20"
               />
+
             </section>
 
           </main>
