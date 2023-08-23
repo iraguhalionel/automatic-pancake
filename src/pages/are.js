@@ -22,8 +22,6 @@ import imageLucky from '@/images/team/IMG_3884.png'
 import imageBrian from '@/images/team/IMG_3885.png'
 import imageIsimbi from '@/images/team/IMG_3880.png'
 
-
-
 function Are() {
 
   const team = [
@@ -31,33 +29,33 @@ function Are() {
       title: 'Leadership',
       people: [
         {
-          name: 'Brian',
-          role: 'Title',
-          image: { src: imageBrian },
-        },
-        {
-          name: 'Mugabo',
-          role: 'Title',
+          name: 'Kessy Mugabo Kayiganwa',
+          role: 'Strategic Comms Director',
           image: { src: imageMugabo },
         },
         {
-          name: 'Rita',
-          role: 'Title',
-          image: { src: imageJules },
-        },
-        {
-          name: 'Lucky',
-          role: 'Title',
-          image: { src: imageLucky },
-        },
-        {
-          name: 'Rita',
-          role: 'Title',
+          name: 'Umuhoza Sandrine Rita',
+          role: 'Logistics and Public Relations Director',
           image: { src: imageRita },
         },
         {
-          name: 'Isimbi',
-          role: 'Title',
+          name: 'Mugishawimana Lucky Celestin',
+          role: 'Multimedia Production Director',
+          image: { src: imageLucky },
+        },
+        {
+          name: 'Brian Geza Hativatye',
+          role: 'Events Director',
+          image: { src: imageBrian },
+        },
+        {
+          name: 'Ndindilimana Jules',
+          role: 'Finance Officer',
+          image: { src: imageJules },
+        },
+        {
+          name: 'Izere Isimbi Guilaine',
+          role: 'Digital Marketing Director',
           image: { src: imageIsimbi },
         },
       ],

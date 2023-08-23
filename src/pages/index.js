@@ -158,7 +158,7 @@ ourselves as all of the above. But we prefer to be strategists.
               </div>
             </section>*/}
 
-            <section className="snap-start bg-black text-white" ref={paragraph2}><PortfolioPage /></section>
+            <section className="snap-start bg-black text-white"  ref={paragraph2}><PortfolioPage /></section>
             <section className="snap-start bg-black text-white">
               {/*<video autoPlay muted className="bg-cover w-full">
                 <source src={Hatana} type="video/mp4" />

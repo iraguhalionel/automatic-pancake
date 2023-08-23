@@ -35,11 +35,13 @@ export default function App({ Component, pageProps }) {
         outerAlpha={0}
         hasBlendMode={true}
         innerStyle={{
-          backgroundColor: 'var(--cursor-color)',
+          mixBlendMode: 'exclusion',
           marginTop: '1.5rem'
         }}
         outerStyle={{
-          border: '1px solid var(--cursor-color)'
+          mixBlendMode: 'exclusion',
+          borderStyle: 'solid',
+          borderWidth: '1px'
         }}
       />
       <Component {...pageProps} />
