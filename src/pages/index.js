@@ -84,11 +84,7 @@ ourselves as all of the above. But we prefer to be strategists.
 
               </div>
             </section>
-            <section className="bg-black text-white">
-              <PortfolioPage />
-            </section>
-
-            {/*<section>
+            {/*<section className="bg-black text-white">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:relative">
                 <div className="mx-auto max-w-2xl lg:max-w-6xl lg:px-12" ref={paragraph2}>
                   <div className="panel red grid lg:grid-cols-3 grid-cols-1 gap-x-8 items-center lg:justify-evenly lg:pt-32 py-16 gap-8">
@@ -123,7 +119,7 @@ ourselves as all of the above. But we prefer to be strategists.
                         </span>
                       </div>
                     </div>
-                    <div className="lg:relative text-center">
+                    <div className="rlg:elative text-center">
                       <div className="w-64">
                         <Image
                           alt="Production"
@@ -161,6 +157,8 @@ ourselves as all of the above. But we prefer to be strategists.
 
               </div>
             </section>*/}
+
+            <section className="snap-start bg-black text-white" ref={paragraph2}><PortfolioPage /></section>
             <section className="snap-start bg-black text-white">
               {/*<video autoPlay muted className="bg-cover w-full">
                 <source src={Hatana} type="video/mp4" />

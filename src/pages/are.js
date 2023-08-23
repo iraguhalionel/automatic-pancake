@@ -11,43 +11,107 @@ import Production from "@/images/services/Production.png"
 import Navigation from "@/components/Navigation";
 import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
+import { Border } from '@/components/Border'
+import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import {Container} from "@/components/Container";
+
+import imageMugabo from '@/images/team/9V1A7504.png'
+import imageRita from '@/images/team/IMG_3881.png'
+import imageJules from '@/images/team/IMG_3882.png'
+import imageLucky from '@/images/team/IMG_3884.png'
+import imageBrian from '@/images/team/IMG_3885.png'
+import imageIsimbi from '@/images/team/IMG_3880.png'
+
+
 
 function Are() {
 
+  const team = [
+    {
+      title: 'Leadership',
+      people: [
+        {
+          name: 'Brian',
+          role: 'Title',
+          image: { src: imageBrian },
+        },
+        {
+          name: 'Mugabo',
+          role: 'Title',
+          image: { src: imageMugabo },
+        },
+        {
+          name: 'Rita',
+          role: 'Title',
+          image: { src: imageJules },
+        },
+        {
+          name: 'Lucky',
+          role: 'Title',
+          image: { src: imageLucky },
+        },
+        {
+          name: 'Rita',
+          role: 'Title',
+          image: { src: imageRita },
+        },
+        {
+          name: 'Isimbi',
+          role: 'Title',
+          image: { src: imageIsimbi },
+        },
+      ],
+    },
+  ]
+
   return (
-    <div className="bg-white h-screen">
+    <div className="bg-white">
       <Navigation className="text-black" />
       <div>
         <main>
-          <section className="bg-white">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-              <div className="mx-auto max-w-2xl lg:max-w-6xl lg:px-12">
-                <div className=" flex items-center justify-between">
-                  <div className="py-16">
-                    <h3 className="-mt-8 text-black font-extralight lg:w-[556px]">
-                      <span className="hidden">
-                        A 3600 Communication Agency An Advertising and PR Agency We may define ourselves as all of the above. But we chose to be a little bit more…
-                      </span>
-                    </h3>
-                  </div>
-                  <div className="hidden">
-                    <Emblem />
-                  </div>
-                </div>
+          <section className="snap-start text-white">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl my-24 sm:my-12 lg:my-12">
+              <div className="space-y-24">
+                {team.map((group) => (
+                  <FadeInStagger key={group.title}>
+                    <Border as={FadeIn} />
+                    <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+                      <div><h2
+                        className="font-display text-2xl font-semibold text-neutral-950">Our Team</h2></div>
+                      <div className="lg:col-span-3">
+
+                        <ul
+                          role="list"
+                          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8"
+                        >
+                          {group.people.map((person) => (
+                            <li key={person.name}>
+                              <FadeIn>
+                                <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                                  <Image
+                                    alt=""
+                                    {...person.image}
+                                    className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                                  />
+                                  <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                                    <p className="font-display text-base/6 font-semibold tracking-wide text-white">
+                                      {person.name}
+                                    </p>
+                                    <p className="mt-2 text-sm text-white">
+                                      {person.role}
+                                    </p>
+                                  </div>
+                                </div>
+                              </FadeIn>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </FadeInStagger>
+                ))}
               </div>
-
             </div>
-          </section>
-
-          <section className="snap-start bg-white text-white pt-14">
-            <Container>
-              <Image
-                alt="Mountains"
-                src={footerImage}
-                className="container w-4/5 mx-auto lg:-mb-32 z-0"
-              />
-            </Container>
 
 
             <div className="w-screen bg-black relative z-10">
