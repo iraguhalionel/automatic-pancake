@@ -138,7 +138,7 @@ ourselves as all of the above. But we prefer to be strategists.
               </div>
             </section>
             {videos.map((video, index) => (
-              <section className="min-h-screen snap-start bg-black text-white" ref={paragraph2}>
+              <section className="min-h-screen snap-start bg-black text-white" key={index} ref={paragraph2}>
                 <div className="red flex flex-col justify-center items-center p-8">
                   <div className="grid grid-cols-1 gap-4">
                       <motion.div
