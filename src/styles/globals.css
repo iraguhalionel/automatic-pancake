@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  --cursor-color: #333
+  --cursor-color: #F7F7F2
 }
 
 html.dark-mode {
@@ -87,10 +87,11 @@ body {
 
 }
 .navbar {
-  color: black;
+  color: #000!important;
 }
+
 .has-scrolled {
-  color: white!important;
+  color: #fff!important;
 }
 
 

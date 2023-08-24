@@ -33,15 +33,18 @@ export default function App({ Component, pageProps }) {
         innerScale={1}
         outerScale={2}
         outerAlpha={0}
+        innerAlpha={2}
         hasBlendMode={true}
-        innerStyle={{
-          mixBlendMode: 'exclusion',
-          marginTop: '1.5rem'
-        }}
         outerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
           borderWidth: '1px'
+        }}
+        innerStyle={{
+          mixBlendMode: 'exclusion',
+          borderStyle: 'solid',
+          borderWidth: '4px',
+          marginTop: '1.5rem'
         }}
       />
       <Component {...pageProps} />

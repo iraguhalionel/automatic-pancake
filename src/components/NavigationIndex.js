@@ -18,7 +18,7 @@ const Navigation = (props) => {
                 <MainLogo className="h-10 w-auto" />
               </Link>
             </div>
-            <ul className="ml-auto flex flex-col text-black">
+            <ul className="ml-auto flex flex-col">
               <li>
                 <Link href="/we"  className={"truncate text-xs hover:text-orange uppercase "  +
                   (currentRoute === "/we" ? " text-orange" : " ")}>

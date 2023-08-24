@@ -34,7 +34,6 @@ const VideoThumbnail = ({ video, onClick }) => {
 
           {/*<ReactPlayer
             url={video.thumbnailUrl}
-
           />*/}
           <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
             <p className="font-display text-xl/8 font-semibold tracking-wide text-white">
