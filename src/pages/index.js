@@ -117,7 +117,7 @@ function Home() {
         <Navigation className="navbar lg:block hidden" />
         <div>
           <main>
-            <section className="bg-white">
+            <section className="bg-white red">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative py-24">
                 <div className="mx-auto max-w-2xl lg:max-w-7xl lg:px-12" ref={paragraph2}>
                   <div className="panel flex lg:flex-row flex-col items-center lg:justify-between gap-y-8">
@@ -127,7 +127,7 @@ function Home() {
                     <div className="">
                       <h3 className="-mt-8 text-black font-extralight lg:w-[376px]">
                       <span className="">
-                        A 360<sup>o</sup> Communication, Digital marketing, Events, and branding Agency. We may define
+                        A 360 Communication: Digital marketing, Events, and branding Agency. We may define
 ourselves as all of the above. But we prefer to be strategists.
                       </span>
                       </h3>
@@ -139,7 +139,7 @@ ourselves as all of the above. But we prefer to be strategists.
             </section>
             {videos.map((video, index) => (
               <section className="min-h-screen snap-start bg-black text-white" key={index} ref={paragraph2}>
-                <div className="red flex flex-col justify-center items-center p-8">
+                <div className="flex flex-col justify-center items-center p-8">
                   <div className="grid grid-cols-1 gap-4">
                       <motion.div
                         className="flex flex-col items-center"

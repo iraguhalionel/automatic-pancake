@@ -20,7 +20,7 @@ const VideoThumbnail = ({ video, onClick }) => {
     <FadeIn>
       <div className="group relative overflow-hidden bg-neutral-100">
         <div
-          className="cursor-pointer relative"
+          className="cursor-none relative"
           onClick={() => onClick(video)}
         >
           {showVideo &&

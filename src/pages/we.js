@@ -48,19 +48,18 @@ function We() {
           <div className="mt-8 text-dark-grey flex flex-col gap-3">
             <p className="text-7xl mb-8 fadeOnScroll">
               <p>
-                I gazed around me, searching for help in my communication and I stumbled upon a group
-                of creative communicators who usually wear multiple hats; branding, events, and strategy.
-                Their journey is organic and innovative, with some bumps along the way.
+                We searched and discovered that businesses are looking for unique ways to better their brands
+                from creative communicators who wear multiple hats; branding, events, and strategy.
               </p>
 <br />
               <p>
-                They have set no limits and remain resolute in timely delivery and quality in their
-                creative journey. With each new day, they are ready to face and embrace new challenges,
-                ensuring their unique and creative abilities continue to grow.
+                That is why we are here, to provide our clients with timely delivery and guarantee exceptional quality.
+                Our journey is organic and innovative, with each new day, we are ready to face and embrace
+                new challenges, ensuring that our unique and creative abilities continue to grow.
               </p>
 <br />
               <p>
-                YATO is their name. Creatively yours, their motto!
+                YATO is our name. Creatively yours, our motto!
               </p>
             </p>
           </div>
