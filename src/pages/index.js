@@ -121,7 +121,7 @@ function Home() {
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative py-24">
                 <div className="mx-auto max-w-2xl lg:max-w-7xl lg:px-12" ref={paragraph2}>
                   <div className="panel flex lg:flex-row flex-col items-center lg:justify-between gap-y-8">
-                    <div>
+                    <div className="ml-12">
                       <DarkLogo className="w-32" />
                     </div>
                     <div className="">
@@ -153,7 +153,7 @@ ourselves as all of the above. But we prefer to be strategists.
                           <FadeIn>
                             <div className="group relative overflow-hidden bg-neutral-100">
                               <div
-                                className="cursor-pointer relative"
+                                className="cursor-none relative"
                                 onClick={() => openVideoModal(video)}
                               >
                                 {showVideo &&
@@ -193,13 +193,9 @@ ourselves as all of the above. But we prefer to be strategists.
 
             {/*<section className="snap-start bg-black text-white"><PortfolioPage ref={paragraph2} /></section>*/}
             <section className="snap-start bg-black text-white">
-              {/*<video autoPlay muted className="bg-cover w-full">
-                <source src={Hatana} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>*/}
 
               <div className="mx-auto max-w-2xl lg:max-w-7xl">
-                <div className="flex gap-8 mx-8 items-center justify-between py-12">
+                <div className="flex gap-8 mx-8 items-center justify-between py-12 grid-cols-2 lg:grid-cols-none">
                   <div className="flex items-center space-x-4">
                     <Location />
                     <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm underline">Irembo House, 72 KN 5 Rd,<br />

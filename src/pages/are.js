@@ -29,6 +29,26 @@ function Are() {
       title: 'Leadership',
       people: [
         {
+          name: 'Brian Geza Hativatye',
+          role: 'Managing Director',
+          image: { src: imageBrian },
+        },
+        {
+          name: 'Mugishawimana Lucky Celestin',
+          role: 'Multimedia Production Director',
+          image: { src: imageLucky },
+        },
+        {
+          name: 'Izere Isimbi Guilaine',
+          role: 'Digital Marketing Director',
+          image: { src: imageIsimbi },
+        },
+        {
+          name: 'Ndindilimana Jules',
+          role: 'Chief Finance Officer',
+          image: { src: imageJules },
+        },
+        {
           name: 'Kessy Mugabo Kayiganwa',
           role: 'Strategic Comms Director',
           image: { src: imageMugabo },
@@ -37,26 +57,6 @@ function Are() {
           name: 'Umuhoza Sandrine Rita',
           role: 'Logistics and Public Relations Director',
           image: { src: imageRita },
-        },
-        {
-          name: 'Mugishawimana Lucky Celestin',
-          role: 'Multimedia Production Director',
-          image: { src: imageLucky },
-        },
-        {
-          name: 'Brian Geza Hativatye',
-          role: 'Events Director',
-          image: { src: imageBrian },
-        },
-        {
-          name: 'Ndindilimana Jules',
-          role: 'Finance Officer',
-          image: { src: imageJules },
-        },
-        {
-          name: 'Izere Isimbi Guilaine',
-          role: 'Digital Marketing Director',
-          image: { src: imageIsimbi },
         },
       ],
     },
@@ -110,50 +110,48 @@ function Are() {
                 ))}
               </div>
             </div>
+          </section>
+          <section className="snap-start bg-black text-white">
 
-
-            <div className="w-screen bg-black relative z-10">
-              <div className="mx-auto max-w-2xl lg:max-w-7xl">
-                <div className="flex md:flex-row flex-col gap-y-12 md:gap-x-12 lg:gap-x-40 items-center justify-center py-12">
-                  <div className="flex items-center space-x-3">
-                    <Location />
-                    <span className="font-light text-sm">Irembo House, 72 KN 5 Rd,<br />
-Plot #588 Remera-Kisimenti</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone />
-                    <span className="font-light text-sm">+250 791 570 011<br/>+250 788 319 228</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail />
-                    <span className="font-light text-sm">ikaze@yato.rw</span>
-                  </div>
-                  <div className="relative">
-                    <div className="flex space-x-6 items-center">
-                      <Link className="group" href="#">
-                        <Linkedin />
-                      </Link>
-                      <Link className="group" href="#">
-                        <Twitter />
-                      </Link>
-                      <Link className="group" href="#">
-                        <Instagram />
-                      </Link>
-                      <Link className="group" href="#">
-                        <Youtube />
-                      </Link>
-                      <Link className="group" href="#">
-                        <Facebook />
-                      </Link>
-                    </div>
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
+              <div className="flex gap-8 mx-8 items-center justify-between py-12 grid-cols-2 lg:grid-cols-none">
+                <div className="flex items-center space-x-4">
+                  <Location />
+                  <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm underline">Irembo House, 72 KN 5 Rd,<br />
+                    Plot #588 Remera-Kisimenti</a>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Phone />
+                  <span className="font-light text-sm flex gap-2"><a href="tel:+250 791 570 011">+250 791 570 011</a>/<a href="tel:+250 788 319 228">+250 788 319 228</a></span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Mail />
+                  <a href="mailto:ikaze@yato.rw" className="font-light text-sm underline">ikaze@yato.rw</a>
+                </div>
+                <div className="relative">
+                  <div className="flex space-x-6 items-center">
+                    <Link className="group" href="#">
+                      <Linkedin />
+                    </Link>
+                    <Link className="group" href="#">
+                      <Twitter />
+                    </Link>
+                    <Link className="group" href="#">
+                      <Instagram />
+                    </Link>
+                    <Link className="group" href="#">
+                      <Youtube />
+                    </Link>
+                    <Link className="group" href="#">
+                      <Facebook />
+                    </Link>
                   </div>
                 </div>
               </div>
-              <Imigongo
-                className="bg-cover w-screen h-[24px] bg-black opacity-20"
-              />
             </div>
-
+            <Imigongo
+              className="bg-cover w-screen h-[24px]  bg-black opacity-20"
+            />
 
           </section>
 

@@ -194,13 +194,15 @@ function Yours() {
 
   }, []);
   return (
-    <section className="bg-white lg:h-screen">
+
+    <section className="bg-white min-h-screen">
 
       <Navigation className="text-black" />
-      <Container>
+      <div  className="mx-auto px-4 sm:px-6 lg:px-32">
+        <div className=" my-8">
         <ul
           role="list"
-          className="lg:mt-16 grid grid-cols-2 mx-4 gap-y-12 gap-x-6 text-sm sm:mt-8 sm:grid-cols-4 md:gap-y-10 lg:grid-cols-6"
+          className="lg:mt-6 grid grid-cols-2 mx-4 gap-y-12 gap-x-6 text-sm sm:mt-8 sm:grid-cols-4 md:gap-y-10 lg:grid-cols-6"
         >
           {features.map((feature) => (
             <li className="flex m-auto items-center" key={feature.name}>
@@ -210,7 +212,8 @@ function Yours() {
             </li>
           ))}
         </ul>
-      </Container>
+        </div>
+      </div>
     </section>
   );
 }
