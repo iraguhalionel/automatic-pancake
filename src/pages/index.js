@@ -45,17 +45,35 @@ const videos = [
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
     videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,w_1280/v1692626422/Hatana_Teaser_Video_without_coming_soon_ljcyim.mp4",
   },
-  {
+  /*{
     title: 'The Wavumbuzi Award Ceremony, 2021',
     category: 'Conceptualizing, live streaming, video production, animation production',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
     videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/v1692625893/Ndi_Rwema_TVC_cnftxc.mp4",
-  },
+  },*/
   {
     title: 'Sanlam Repositioning Ceremony, 2020',
     category: 'Planned,coordinated,and curated the Sanlam repositioning campaign',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/v1692625893/Ndi_Rwema_TVC_cnftxc.mp4",
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,h_720/v1692885856/1._sanlam_launch_staff_event_highlights_360p_k4ylhz.mp4",
+  },
+  {
+    title: 'Sanlam Rebranding Public Event 2020',
+    category: 'Planned,coordinated,and curated the Sanlam repositioning campaign',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,h_720/v1692885856/1._sanlam_launch_staff_event_highlights_360p_k4ylhz.mp4",
+  },
+  {
+    title: 'Sanlam Rebranding Staff Event 2020',
+    category: 'Planned,coordinated,and curated the Sanlam repositioning campaign',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,h_720/v1692885856/1._sanlam_launch_staff_event_highlights_360p_k4ylhz.mp4",
+  },
+  {
+    title: 'Inyange chocolate milk, 2019',
+    category: 'Conceptualizing, casting, script writing,sound production,video production and editing, animation',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/v1692885854/inyange_chocolate_milk_v7_en_720p_mrlmc9.mp4",
   },
   // Add more video objects...
 ];
