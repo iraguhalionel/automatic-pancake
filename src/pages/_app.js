@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
       </style>
       <AnimatedCursor
         innerSize={8}
-        outerSize={35}
+        outerSize={25}
         innerScale={1}
         outerScale={2}
         outerAlpha={0}
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
           borderWidth: '4px',
-          marginTop: '1.5rem'
+          marginTop: '1.2rem'
         }}
       />
       <Component {...pageProps} />
