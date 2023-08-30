@@ -286,7 +286,7 @@ const features = [
     description:
       'Invite new insiders to get tips faster and beat even other Pocket users.',
     icon: Image31,
-    height: 70,
+    width: 120,
   }
 ]
 
@@ -306,10 +306,10 @@ function Yours() {
   }, []);
   return (
 
-    <section className="bg-white min-h-screen">
+    <section className="bg-white">
 
       <Navigation className="text-black" />
-      <div  className="mx-auto px-4 sm:px-6 lg:px-32">
+      <div  className="mx-auto pb-8 px-4 sm:px-6 lg:px-32">
         <div className=" my-8">
         <ul
           role="list"
