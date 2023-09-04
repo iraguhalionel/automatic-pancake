@@ -20,7 +20,7 @@ const Navigation = (props) => {
             </div>
             <ul className="ml-auto flex flex-col">
               <li>
-                <Link href="/we"  className={"truncate text-xs hover:text-orange uppercase "  +
+                <Link href="/we"  className={"truncate text-xs hover:bg-black hover:text-white uppercase "  +
                   (currentRoute === "/we" ? " text-orange" : " ")}>
                   We
                 </Link>

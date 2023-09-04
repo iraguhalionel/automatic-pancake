@@ -1,12 +1,37 @@
-import { useId } from 'react'
+import React, {useRef, useEffect, useState} from "react";
+import gsap from 'gsap/dist/gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { motion } from "framer-motion"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/core';
 
-import { Container } from '@/components/Container'
-import Navigation from "@/components/Navigation";
+import PreLoader from "@/components/PreLoader";
+import Emblem from "@/components/emblem";
+import footerImage from "@/images/footerImage.png"
 import Image from "next/image";
-import TeamBuilding from "@/images/TeamBuilding.png"
-import UNHCR from "@/images/UNHCR.png"
+import strategyPic from "@/images/services/Strategy.png"
+import DigitalMarketing from "@/images/services/DigitalMarketing.png"
+import Branding from "@/images/services/Branding.png"
+import Event from "@/images/services/Event.png"
+import Production from "@/images/services/Production.png"
+import NavigationMenu from "@/components/NavigationIndex";
+import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
-import PortfolioPage from "@/components/PortfolioPage";
+import DarkLogo from "@/components/darkLogo";
+import Hatana from "@/images/Hatana_Teaser_Video_without_coming_soon.mp4"
+
+import VideoModal from '@/components/VideoModal';
+import {FadeIn, FadeInStagger} from "@/components/FadeIn";
+import dynamic from "next/dynamic";
+
+SwiperCore.use([Navigation, Autoplay, Pagination]);
+
+const DynamicVideoPlayer = dynamic(() => import("@/components/VideoHomepagePlayer"), {
+  ssr: false, // Avoid server-side rendering
+});
 
 const videos = [
   {
@@ -83,39 +108,151 @@ const videos = [
   // Add more video objects...
 ];
 
+function Creatively() {
+  gsap.registerPlugin(ScrollTrigger);
 
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
-function DeviceArrowIcon(props) {
+  const [showVideo, setShowVideo] = useState(false);
 
+  const ref = useRef(null);
+  const trigger = useRef(null);
+  const paragraph1 = useRef(null);
+  const paragraph2 = useRef(null);
+  const paragraph3 = useRef(null);
+
+  useEffect(() => {
+    const elementToModify = document.querySelector('.navbar');
+
+    ScrollTrigger.defaults({
+      toggleActions: "restart pause resume pause",
+      scroller: ".section"
+    });
+
+    gsap.to(".orange h3", {
+      scrollTrigger: ".orange",
+      ease: "Power3.easeInOut",
+    });
+
+    gsap.to(".red", {
+      scrollTrigger: {
+        trigger: ".red",
+        toggleActions: "restart pause reverse pause",
+        toggleClass: {
+          targets: elementToModify,
+          className: 'has-scrolled'
+        },
+        markers: false
+      },
+      duration: 1,
+      ease: "none"
+    });
+    setShowVideo(true);
+  }, []);
+
+  const openVideoModal = (video) => {
+    setSelectedVideo(video);
+  };
+
+  const closeVideoModal = () => {
+    setSelectedVideo(null);
+  };
   return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
-        fill="#737373"
-      />
-      <path
-        d="M12 25l8-8m0 0h-6m6 0v6"
-        stroke="#171717"
-        strokeWidth={2}
-        strokeLinecap="round"
-      />
-      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
-    </svg>
-  )
-}
+    <>
+      <PreLoader />
+      <div className="section bg-black isolate">
+        <NavigationMenu className="text-white" />
+        <div>
+          <main>
+            {videos.map((video, index) => (
+              <section className="snap-start bg-black text-white" key={index} ref={paragraph2}>
+                <div className="min-h-screen">
+                  <div>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      key={video.title}
+                    >
+                      <FadeInStagger>
 
+                        <FadeIn>
+                          <div className="group relative overflow-hidden bg-neutral-100">
+                            <div
+                              className="cursor-none relative"
+                              onClick={() => openVideoModal(video)}
+                            >
+                              { video.imageUrl ? (
+                                <Swiper
+                                  spaceBetween={30}
+                                  centeredSlides={true}
+                                  autoplay={{
+                                    delay: 2500,
+                                    disableOnInteraction: false,
+                                  }}
+                                  pagination={{
+                                    clickable: true,
+                                    renderBullet: function (index, className) {
+                                      return ''; // Return an empty string to hide the pagination dots
+                                    },
+                                  }}
+                                  navigation={false}
+                                  modules={[Autoplay, Pagination, Navigation]}
+                                  className="mySwiper"
+                                >
+                                  {video.imageUrl.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                      <img
+                                        src={image}
+                                        width="100%"
+                                        height="100%"
+                                        alt={image}
+                                        className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105 h-screen"
+                                      />
+                                    </SwiperSlide>
+                                  ))}
 
-function Home() {
-  return (
-    <div className="bg-black">
-      <Navigation className="text-white" />
-      <Container>
-        <PortfolioPage />
-      </Container>
-    </div>
+                                </Swiper>
+                              ) : (showVideo && video.videoUrl) &&
+                                <DynamicVideoPlayer
+                                  url={video.videoUrl}
+                                  width="100%"
+                                  height="100%"
+                                  alt={video.title}
+                                  className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105 h-screen"
+                                />}
+                              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                                <p className="font-display text-xl/8 font-semibold tracking-wide text-white">
+                                  {video.title}
+                                </p>
+                                <p className="mt-2 text-gray-200">
+                                  {video.category}
+                                </p>
+                              </div>
+                              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-40">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </FadeIn>
+                      </FadeInStagger>
+                    </motion.div>
+
+                  </div>
+                </div>
+              </section>
+            ))}
+            {selectedVideo && (
+              <VideoModal video={selectedVideo} onClose={closeVideoModal} />
+            )}
+
+          </main>
+        </div>
+      </div>
+    </>
   );
 }
 
-export default Home;
+export default Creatively;

@@ -99,7 +99,7 @@ const PortfolioPage = () => {
   const paragraph1 = useRef(null);
   const paragraph2 = useRef(null);
   const paragraph3 = useRef(null);
-
+/*
   useEffect(() => {
     const elementToModify = document.querySelector('.navbar');
 
@@ -127,7 +127,7 @@ const PortfolioPage = () => {
       ease: "none"
     });
     setShowVideo(true);
-  }, []);
+  }, []);*/
 
   const openVideoModal = (video) => {
     setSelectedVideo(video);

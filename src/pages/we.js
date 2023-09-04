@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import Link from "next/link";
 
 
+
 function We() {
 
   const paragraphRefs = useRef([]);
@@ -45,22 +46,18 @@ function We() {
       <Navigation className="text-black" />
       <div  className="mx-auto px-4 sm:px-6 lg:px-32">
         <div className=" my-8">
-          <div className="mt-8 text-dark-grey flex flex-col gap-3">
-            <p className="text-7xl mb-8 fadeOnScroll">
-              <p>
+          <div className="mt-8 text-dark flex flex-col gap-3">
+            <p className="text-7xl mb-8 text-justify fadeOnScroll">
                 We searched and discovered that businesses are looking for unique ways to better their brands
                 from creative communicators who wear multiple hats; branding, events, and strategy.
-              </p>
+
 <br />
-              <p>
                 That is why we are here, to provide our clients with timely delivery and guarantee exceptional quality.
                 Our journey is organic and innovative, with each new day, we are ready to face and embrace
                 new challenges, ensuring that our unique and creative abilities continue to grow.
-              </p>
+
 <br />
-              <p>
                 YATO is our name. Creatively yours, our motto!
-              </p>
             </p>
           </div>
           <div className="flex justify-center ">

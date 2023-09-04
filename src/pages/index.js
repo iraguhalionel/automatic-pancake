@@ -2,6 +2,11 @@ import React, {useRef, useEffect, useState} from "react";
 import gsap from 'gsap/dist/gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { motion } from "framer-motion"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/core';
 
 import PreLoader from "@/components/PreLoader";
 import Emblem from "@/components/emblem";
@@ -12,7 +17,7 @@ import DigitalMarketing from "@/images/services/DigitalMarketing.png"
 import Branding from "@/images/services/Branding.png"
 import Event from "@/images/services/Event.png"
 import Production from "@/images/services/Production.png"
-import Navigation from "@/components/NavigationIndex";
+import NavigationMenu from "@/components/NavigationIndex";
 import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
 import DarkLogo from "@/components/darkLogo";
@@ -21,6 +26,8 @@ import Hatana from "./../images/Hatana_Teaser_Video_without_coming_soon.mp4"
 import VideoModal from '@/components/VideoModal';
 import {FadeIn, FadeInStagger} from "@/components/FadeIn";
 import dynamic from "next/dynamic";
+
+SwiperCore.use([Navigation, Autoplay, Pagination]);
 
 const DynamicVideoPlayer = dynamic(() => import("../components/VideoHomepagePlayer"), {
   ssr: false, // Avoid server-side rendering
@@ -154,23 +161,20 @@ function Home() {
     <>
       <PreLoader />
       <div className="section bg-white isolate">
-        <Navigation className="lg:hidden sm:bg-white text-black" />
-        <Navigation className="navbar lg:block hidden" />
+        <NavigationMenu className="lg:hidden sm:bg-white text-black" />
+        <NavigationMenu className="navbar lg:block hidden" />
         <div>
           <main>
             <section className="bg-white red">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative py-24">
                 <div className="mx-auto max-w-2xl lg:max-w-7xl lg:px-12" ref={paragraph2}>
                   <div className="panel flex lg:flex-row flex-col items-center lg:justify-between gap-y-8">
-                    <div className="ml-12">
+                    <div className="">
                       <DarkLogo className="w-32" />
                     </div>
                     <div className="">
-                      <h3 className="-mt-8 text-black font-extralight lg:w-[376px]">
-                      <span className="">
-                        A 360 Communication: Digital marketing, Events, and branding Agency. We may define
-ourselves as all of the above. But we prefer to be strategists.
-                      </span>
+                      <h3 className="-mt-8 text-black text-justify font-extralight lg:w-[376px]">
+                        A 360 Communication: Digital marketing, Events, and branding Agency. We may define ourselves as all of the above. But we prefer to be strategists.
                       </h3>
                     </div>
                   </div>
@@ -179,11 +183,10 @@ ourselves as all of the above. But we prefer to be strategists.
               </div>
             </section>
             {videos.map((video, index) => (
-              <section className="min-h-screen snap-start bg-black text-white" key={index} ref={paragraph2}>
-                <div className="flex flex-col justify-center items-center p-8">
-                  <div className="grid grid-cols-1 gap-4">
+              <section className="snap-start bg-black text-white" key={index} ref={paragraph2}>
+                <div className="min-h-screen">
+                  <div>
                       <motion.div
-                        className="flex flex-col items-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
@@ -197,19 +200,44 @@ ourselves as all of the above. But we prefer to be strategists.
                                 className="cursor-none relative"
                                 onClick={() => openVideoModal(video)}
                               >
-                                { video.imageUrl ? (<img
-                                  src={video.thumbnailUrl}
-                                  width="100%"
-                                  height="100%"
-                                  alt={video.title}
-                                  className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                                /> ) : (showVideo && video.videoUrl) &&
+                                { video.imageUrl ? (
+                                  <Swiper
+                                    spaceBetween={30}
+                                    centeredSlides={true}
+                                    autoplay={{
+                                      delay: 2500,
+                                      disableOnInteraction: false,
+                                    }}
+                                    pagination={{
+                                      clickable: true,
+                                      renderBullet: function (index, className) {
+                                        return ''; // Return an empty string to hide the pagination dots
+                                      },
+                                    }}
+                                    navigation={false}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
+                                  >
+                                    {video.imageUrl.map((image, index) => (
+                                      <SwiperSlide key={index}>
+                                        <img
+                                          src={image}
+                                          width="100%"
+                                          height="100%"
+                                          alt={image}
+                                          className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105 h-screen"
+                                        />
+                                      </SwiperSlide>
+                                    ))}
+
+                                  </Swiper>
+                                ) : (showVideo && video.videoUrl) &&
                                   <DynamicVideoPlayer
                                     url={video.videoUrl}
                                     width="100%"
                                     height="100%"
                                     alt={video.title}
-                                    className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                                    className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105 h-screen"
                                   />}
                                 <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
                                   <p className="font-display text-xl/8 font-semibold tracking-wide text-white">

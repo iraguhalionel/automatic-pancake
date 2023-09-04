@@ -5,7 +5,7 @@ import '@/styles/globals.css'
 import "@/styles/fonts.css"
 
 import { Nunito_Sans } from 'next/font/google';
-
+import emblem from "@/components/emblem";
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
@@ -38,11 +38,13 @@ export default function App({ Component, pageProps }) {
         outerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
+          backgroundImage: `url(${emblem})`,
           borderWidth: '1px'
         }}
         innerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
+          backgroundImage: `url(${emblem})`,
           borderWidth: '4px',
           marginTop: '1.2rem'
         }}
