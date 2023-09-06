@@ -5,7 +5,7 @@ import '@/styles/globals.css'
 import "@/styles/fonts.css"
 
 import { Nunito_Sans } from 'next/font/google';
-import emblem from "@/components/emblem";
+import Emblem from "@/components/emblem";
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
@@ -28,27 +28,27 @@ export default function App({ Component, pageProps }) {
         `}
       </style>
       <AnimatedCursor
-        innerSize={8}
+        innerSize={0}
         outerSize={25}
         innerScale={1}
         outerScale={2}
         outerAlpha={0}
         innerAlpha={2}
         hasBlendMode={true}
-        outerStyle={{
+        /*outerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
-          backgroundImage: `url(${emblem})`,
           borderWidth: '1px'
-        }}
+        }}*/
         innerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
-          backgroundImage: `url(${emblem})`,
-          borderWidth: '4px',
-          marginTop: '1.2rem'
+          borderWidth: '0px',
+          marginTop: '-1.2rem'
         }}
-      />
+      >
+        <Emblem />
+      </AnimatedCursor>
       <Component {...pageProps} />
     </>
   )
