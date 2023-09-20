@@ -29,23 +29,25 @@ export default function App({ Component, pageProps }) {
       </style>
       <AnimatedCursor
         innerSize={0}
-        outerSize={25}
+        outerSize={0}
         innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
+        outerScale={1}
+        outerAlpha={2}
         innerAlpha={2}
         hasBlendMode={true}
-        /*outerStyle={{
+        outerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
-          borderWidth: '1px'
-        }}*/
+          borderWidth: '4px',
+          marginTop: '0.1rem'
+        }}
         innerStyle={{
-          mixBlendMode: 'exclusion',
-          borderStyle: 'solid',
+          // mixBlendMode: 'difference',
+          // borderStyle: 'solid',
           borderWidth: '0px',
           marginTop: '-1.2rem'
         }}
+        trailingSpeed={12}
       >
         <Emblem />
       </AnimatedCursor>

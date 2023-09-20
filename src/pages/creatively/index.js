@@ -159,7 +159,6 @@ function Creatively() {
   };
   return (
     <>
-      <PreLoader />
       <div className="section bg-black isolate">
         <NavigationMenu className="text-white" />
         <div>
@@ -207,7 +206,7 @@ function Creatively() {
                                         width="100%"
                                         height="100%"
                                         alt={image}
-                                        className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105 h-screen"
+                                        className="object-cover transition duration-500 motion-safe:group-hover:scale-105 h-screen"
                                       />
                                     </SwiperSlide>
                                   ))}

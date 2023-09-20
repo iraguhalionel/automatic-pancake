@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const HeaderComponent = () => {
   return (
     <nav className="w-1/4 bg-gray-800 text-white flex flex-col items-center justify-center" aria-label="Sidebar">
       <a
@@ -27,5 +27,5 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;
 

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  --cursor-color: #F7F7F2
+  --cursor-color: #000
 }
 
 html.dark-mode {

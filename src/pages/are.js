@@ -21,6 +21,7 @@ import imageJules from '@/images/team/IMG_3882.png'
 import imageLucky from '@/images/team/IMG_3884.png'
 import imageBrian from '@/images/team/IMG_3885.png'
 import imageIsimbi from '@/images/team/IMG_3880.png'
+import MainMenu from "@/components/MainMenu";
 
 function Are() {
 
@@ -64,7 +65,7 @@ function Are() {
 
   return (
     <div className="bg-white">
-      <Navigation className="text-black" />
+      <MainMenu className="text-black" />
       <div>
         <main>
           <section className="snap-start text-white">

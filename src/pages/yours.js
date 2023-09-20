@@ -37,7 +37,7 @@ import Image30 from "@/images/clientsLogo/image30.png";
 import Image31 from "@/images/clientsLogo/image31.png";
 
 import { Container } from '@/components/Container'
-import Navigation from "@/components/Navigation";
+import MainMenu from "@/components/MainMenu";
 
 const features = [
   {
@@ -308,7 +308,7 @@ function Yours() {
 
     <section className="bg-white">
 
-      <Navigation className="text-black" />
+      <MainMenu className="text-black" />
       <div  className="mx-auto pb-8 px-4 sm:px-6 lg:px-32">
         <div className=" my-8">
         <ul
