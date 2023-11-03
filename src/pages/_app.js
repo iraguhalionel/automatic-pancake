@@ -38,18 +38,19 @@ export default function App({ Component, pageProps }) {
         outerStyle={{
           mixBlendMode: 'exclusion',
           borderStyle: 'solid',
-          borderWidth: '4px',
+          borderWidth: '3.5px',
           marginTop: '0.1rem'
         }}
         innerStyle={{
-          // mixBlendMode: 'difference',
-          // borderStyle: 'solid',
+          mixBlendMode: 'exclusion',
           borderWidth: '0px',
-          marginTop: '-1.2rem'
+          marginTop: '-1.1rem'
         }}
         trailingSpeed={12}
       >
-        <Emblem />
+          <div className="text-white cursor2">
+            <Emblem />
+          </div>
       </AnimatedCursor>
       <Component {...pageProps} />
     </>

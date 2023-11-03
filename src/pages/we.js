@@ -84,28 +84,31 @@ function We() {
     <section className="bg-white">
 
       <MainMenu />
-      <div  className="mx-auto px-4 sm:px-6 lg:px-32">
-        <div className=" my-8">
+      <div  className="mx-auto px-4 sm:px-6 lg:max-w-5xl">
+        <div className="py-8">
           <div className="mt-8 text-dark flex flex-col gap-3">
-            <p className="text-7xl mb-8 text-justify fadeOnScroll">
+              <p className="uppercase">About Us</p>
+            <p className="mb-8 fadeOnScroll text-about text-justify">
                 We searched and discovered that businesses are looking for unique ways to better their brands
                 from creative communicators who wear multiple hats; branding, events, and strategy.
-<br />
+</p><p className="mb-8 text-justify fadeOnScroll text-about">
                 That is why we are here, to provide our clients with timely delivery and guarantee exceptional quality.
                 Our journey is organic and innovative, with each new day, we are ready to face and embrace
                 new challenges, ensuring that our unique and creative abilities continue to grow.
-<br />
-                YATO is our name. Creatively yours, our motto!
-            </p>
+<br />            </p>
+              <p className="uppercase  font-bold">YATO is our name. Creatively yours, our motto!</p>
+
           </div>
-          <div className="flex justify-center ">
-            <button className="uppercase rounded-full px-4 py-6 text-sm m-4 border border-white" ref={yatologo}>
-              <span className="fade-in">Yato</span>
-            </button>
-          </div>
-          <div className="flex flex-row gap-x-8 font-bold text-sm justify-center lg:pt-32 mt-24" ref={buttonsAnim}>
-            <Link href="#" >Company Profile</Link>
-            <Link href="#" >Brand Identity</Link>
+          <div className="py-8">
+              {/*<div className="flex justify-center ">
+                  <button className="uppercase rounded-full px-4 py-6 text-sm m-4 border border-white" ref={yatologo}>
+                      <span className="fade-in">Yato</span>
+                  </button>
+              </div>
+              <div className="flex flex-row gap-x-8 font-bold text-sm justify-center lg:pt-32 mt-24" ref={buttonsAnim}>
+                  <Link href="#" >Company Profile</Link>
+                  <Link href="#" >Brand Identity</Link>
+              </div>*/}
           </div>
         </div>
       </div>

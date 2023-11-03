@@ -17,7 +17,7 @@ import DigitalMarketing from "@/images/services/DigitalMarketing.png"
 import Branding from "@/images/services/Branding.png"
 import Event from "@/images/services/Event.png"
 import Production from "@/images/services/Production.png"
-import NavigationMenu from "@/components/NavigationIndex";
+import NavigationMenu from "@/components/MainMenuIndex";
 import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
 import DarkLogo from "@/components/darkLogo";
@@ -161,8 +161,9 @@ function Home() {
     <>
       <PreLoader />
       <div className="section bg-white isolate">
-        <NavigationMenu className="lg:hidden sm:bg-white text-black" />
-        <NavigationMenu className="navbar lg:block hidden" />
+        <section className="top-0 sticky">
+          <NavigationMenu className="navbar lg:block hidden" />
+        </section>
         <div>
           <main>
             <section className="bg-white red">
@@ -270,10 +271,10 @@ function Home() {
             <section className="snap-start bg-black text-white">
 
               <div className="mx-auto max-w-2xl lg:max-w-7xl">
-                <div className="flex gap-8 mx-8 items-center justify-between py-12 grid-cols-2 lg:grid-cols-none">
+                <div className="flex gap-8 mx-8 items-center justify-between py-6 grid-cols-2 lg:grid-cols-none">
                   <div className="flex items-center space-x-4">
                     <Location />
-                    <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm underline">Irembo House, 72 KN 5 Rd,<br />
+                    <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm">Irembo House, 72 KN 5 Rd,<br />
 Plot #588 Remera-Kisimenti</a>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -282,7 +283,7 @@ Plot #588 Remera-Kisimenti</a>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail />
-                    <a href="mailto:ikaze@yato.rw" className="font-light text-sm underline">ikaze@yato.rw</a>
+                    <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw</a>
                   </div>
                   <div className="relative">
                     <div className="flex space-x-6 items-center">

@@ -15,12 +15,12 @@ import { Border } from '@/components/Border'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import {Container} from "@/components/Container";
 
-import imageMugabo from '@/images/team/9V1A7504.png'
-import imageRita from '@/images/team/IMG_3881.png'
-import imageJules from '@/images/team/IMG_3882.png'
-import imageLucky from '@/images/team/IMG_3884.png'
-import imageBrian from '@/images/team/IMG_3885.png'
-import imageIsimbi from '@/images/team/IMG_3880.png'
+import imageMugabo from '@/images/team/Kessy.png'
+import imageRita from '@/images/team/Rita.png'
+import imageJules from '@/images/team/Jules.png'
+import imageLucky from '@/images/team/Lucky.png'
+import imageBrian from '@/images/team/Geza.png'
+import imageIsimbi from '@/images/team/Guilaine.png'
 import MainMenu from "@/components/MainMenu";
 
 function Are() {
@@ -112,49 +112,49 @@ function Are() {
               </div>
             </div>
           </section>
-          <section className="snap-start bg-black text-white">
+            <section className="snap-start bg-black text-white">
 
-            <div className="mx-auto max-w-2xl lg:max-w-7xl">
-              <div className="flex gap-8 mx-8 items-center justify-between py-12 grid-cols-2 lg:grid-cols-none">
-                <div className="flex items-center space-x-4">
-                  <Location />
-                  <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm underline">Irembo House, 72 KN 5 Rd,<br />
-                    Plot #588 Remera-Kisimenti</a>
+                <div className="mx-auto max-w-2xl lg:max-w-7xl">
+                    <div className="flex gap-8 mx-8 items-center justify-between py-6 grid-cols-2 lg:grid-cols-none">
+                        <div className="flex items-center space-x-4">
+                            <Location />
+                            <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm">Irembo House, 72 KN 5 Rd,<br />
+                                Plot #588 Remera-Kisimenti</a>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <Phone />
+                            <span className="font-light text-sm flex gap-2"><a href="tel:+250 791 570 011">+250 791 570 011</a>/<a href="tel:+250 788 319 228">+250 788 319 228</a></span>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <Mail />
+                            <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw</a>
+                        </div>
+                        <div className="relative">
+                            <div className="flex space-x-6 items-center">
+                                <Link className="group" href="#">
+                                    <Linkedin />
+                                </Link>
+                                <Link className="group" href="#">
+                                    <Twitter />
+                                </Link>
+                                <Link className="group" href="#">
+                                    <Instagram />
+                                </Link>
+                                <Link className="group" href="#">
+                                    <Youtube />
+                                </Link>
+                                <Link className="group" href="#">
+                                    <Facebook />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <Phone />
-                  <span className="font-light text-sm flex gap-2"><a href="tel:+250 791 570 011">+250 791 570 011</a>/<a href="tel:+250 788 319 228">+250 788 319 228</a></span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Mail />
-                  <a href="mailto:ikaze@yato.rw" className="font-light text-sm underline">ikaze@yato.rw</a>
-                </div>
-                <div className="relative">
-                  <div className="flex space-x-6 items-center">
-                    <Link className="group" href="#">
-                      <Linkedin />
-                    </Link>
-                    <Link className="group" href="#">
-                      <Twitter />
-                    </Link>
-                    <Link className="group" href="#">
-                      <Instagram />
-                    </Link>
-                    <Link className="group" href="#">
-                      <Youtube />
-                    </Link>
-                    <Link className="group" href="#">
-                      <Facebook />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <Imigongo
-              className="bg-cover w-screen h-[24px]  bg-black opacity-20"
-            />
+                <Imigongo
+                    className="bg-cover w-screen h-[24px]  bg-black opacity-20"
+                />
 
-          </section>
+            </section>
 
         </main>
       </div>
