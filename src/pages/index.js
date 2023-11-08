@@ -287,28 +287,28 @@ Plot #588 Remera-Kisimenti</a>
                   </div>
                   <div className="relative">
                     <div className="flex space-x-6 items-center">
-                      <Link className="group" href="#">
+                      <Link className="group" href="https://www.linkedin.com/in/yato-part-of-organic-inc-18179326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                         <Linkedin />
                       </Link>
-                      <Link className="group" href="#">
+                      <Link className="group" href="https://x.com/Yato_rw?t=QQ1tkFA12QVwztd4qFgRsg&s=09">
                         <Twitter />
                       </Link>
-                      <Link className="group" href="#">
+                      <Link className="group" href="https://instagram.com/yato_rw">
                         <Instagram />
                       </Link>
                       <Link className="group" href="#">
                         <Youtube />
                       </Link>
-                      <Link className="group" href="#">
+                      <Link className="group" href="https://www.facebook.com/profile.php?id=100075556000580">
                         <Facebook />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <Imigongo
+              {/*<Imigongo
                 className="bg-cover w-screen h-[24px]  bg-black opacity-20"
-              />
+              />*/}
 
             </section>
 

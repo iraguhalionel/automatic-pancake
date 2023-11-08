@@ -17,7 +17,7 @@ import DigitalMarketing from "@/images/services/DigitalMarketing.png"
 import Branding from "@/images/services/Branding.png"
 import Event from "@/images/services/Event.png"
 import Production from "@/images/services/Production.png"
-import NavigationMenu from "@/components/NavigationIndex";
+import NavigationMenu from "@/components/MainMenu";
 import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
 import DarkLogo from "@/components/darkLogo";
