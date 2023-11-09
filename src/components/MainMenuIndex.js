@@ -105,7 +105,7 @@ const MainMenu = (props) => {
               layout
               id={panelId}
               style={{ height: expanded ? 'auto' : '0rem' }}
-              className="absolute left-0 right-0 top-2 z-40 z-50 overflow-hidden bg-neutral-950 top-0 bottom-0"
+              className="absolute left-0 right-0 top-0 z-50 overflow-hidden bg-neutral-950"
               aria-hidden={expanded ? undefined : 'true'}
               inert={expanded ? undefined : ''}
           >
@@ -125,12 +125,11 @@ const MainMenu = (props) => {
                     }}
                 />
               </div>
-              <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
+              <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px h-screen before:bg-neutral-800">
                 <Container>
-                  <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:pt-16 text-white text-center">
-
-                    <div className="sm:border-l sm:border-transparent sm:pl-16">
-                      <ul className="ml-auto flex flex-col text-2xl font-header gap-4">
+                  <div className="grid grid-cols-1 text-white text-center h-screen items-center ">
+                    <div>
+                      <ul className="flex flex-col text-2xl font-header gap-8">
                         <li>
                           <Link href="/we"  className={"truncate hover:text-orange uppercase "  +
                               (currentRoute === "/we" ? " text-orange" : " ")}>

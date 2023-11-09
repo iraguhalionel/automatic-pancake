@@ -12,7 +12,7 @@ const NavigationMenu = ({
                       toggleRef,...props
                     }) => {
   return (
-    <div className="sticky top-0 z-50 py-8">
+    <div className="absolute w-screen top-0 z-50 py-8">
       <div {...props}>
         <div className="mx-auto px-4 sm:px-6 lg:px-32">
           <nav className="flex items-center">

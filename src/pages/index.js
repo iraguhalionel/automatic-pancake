@@ -161,9 +161,8 @@ function Home() {
     <>
       <PreLoader />
       <div className="section bg-white isolate">
-        <section className="top-0 sticky">
-          <NavigationMenu className="navbar lg:block hidden" />
-        </section>
+        <NavigationMenu className="lg:hidden sm:bg-white text-black" />
+        <NavigationMenu className="navbar lg:block hidden" />
         <div>
           <main>
             <section className="bg-white red">
