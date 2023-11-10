@@ -17,7 +17,7 @@ import DigitalMarketing from "@/images/services/DigitalMarketing.png"
 import Branding from "@/images/services/Branding.png"
 import Event from "@/images/services/Event.png"
 import Production from "@/images/services/Production.png"
-import NavigationMenu from "@/components/MainMenu";
+import NavigationMenu from "@/components/MainMenuIndex";
 import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
 import DarkLogo from "@/components/darkLogo";
@@ -160,7 +160,8 @@ function Creatively() {
   return (
     <>
       <div className="section bg-black isolate">
-        <NavigationMenu className="text-white" />
+        <NavigationMenu className="lg:hidden sm:bg-white text-black" />
+        <NavigationMenu className="navbar lg:block hidden text-white" />
         <div>
           <main>
             {videos.map((video, index) => (

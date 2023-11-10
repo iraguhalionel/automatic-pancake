@@ -20,7 +20,7 @@ const NavigationMenu = ({
               '',
               invert
                 ? 'text-white'
-                : 'text-black'
+                : null
             )}>
               <Link href="/">
                 <span className="sr-only">Home</span>
@@ -45,7 +45,7 @@ const NavigationMenu = ({
                     'h-6 w-6',
                     invert
                       ? 'fill-white group-hover:fill-neutral-200'
-                      : 'fill-neutral-950 group-hover:fill-neutral-700'
+                      : 'fill-current group-hover:fill-neutral-700'
                   )}
                 />
               </button>

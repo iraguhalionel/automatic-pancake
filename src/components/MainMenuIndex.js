@@ -26,6 +26,7 @@ function MenuIcon(props) {
 }
 
 const MainMenu = (props) => {
+  console.log(props)
 
   const paragraphRefs = useRef([]);
   const yatologo = useRef(null);
@@ -85,9 +86,10 @@ const MainMenu = (props) => {
           <div
               aria-hidden={expanded ? 'true' : undefined}
               inert={expanded ? '' : undefined}
-              {...props}
+
           >
             <Navigation
+                {...props}
                 panelId={panelId}
                 icon={MenuIcon}
                 toggleRef={openRef}
