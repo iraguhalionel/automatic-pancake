@@ -57,10 +57,10 @@ const videos = [
     category: 'Conceptualizing, branding, sourcing',
     thumbnailUrl: 'https://res.cloudinary.com/do91rofg8/image/upload//c_thumb,w_1080,h_720,g_auto/v1693389094/1_bfevdv.jpg',
     imageUrl: [
-      "https://res.cloudinary.com/do91rofg8/image/upload//c_thumb,w_1080,h_720,g_auto/v1693389094/1_bfevdv.jpg",
-      "https://res.cloudinary.com/do91rofg8/image/upload//c_thumb,w_1080,h_720,g_auto/v1693389095/5_ls3fht.jpg",
-      "https://res.cloudinary.com/do91rofg8/image/upload//c_thumb,w_1080,h_720,g_auto/v1693389095/4_peuopi.jpg",
-      "https://res.cloudinary.com/do91rofg8/image/upload//c_thumb,w_1080,h_720,g_auto/v1693389095/6_heqqsg.jpg"
+      "https://res.cloudinary.com/do91rofg8/image/upload/v1693389094/1_bfevdv.jpg",
+      "https://res.cloudinary.com/do91rofg8/image/upload/v1693389094/1_bfevdv.jpg",
+      "https://res.cloudinary.com/do91rofg8/image/upload/v1693389094/1_bfevdv.jpg",
+      "https://res.cloudinary.com/do91rofg8/image/upload/v1693389094/1_bfevdv.jpg"
     ]
   },
   /*{
@@ -165,8 +165,8 @@ function Creatively() {
         <div>
           <main>
             {videos.map((video, index) => (
-              <section className="snap-start bg-black text-white" key={index} ref={paragraph2}>
-                <div className="min-h-screen">
+              <section className="snap-start" key={index} ref={paragraph2}>
+                <div>
                   <div>
                     <motion.div
                       initial={{ opacity: 0 }}
@@ -177,7 +177,7 @@ function Creatively() {
                       <FadeInStagger>
 
                         <FadeIn>
-                          <div className="group relative overflow-hidden bg-neutral-100">
+                          <div className="group relative overflow-hidden bg-red-400">
                             <div
                               className="cursor-none relative"
                               onClick={() => openVideoModal(video)}
@@ -219,7 +219,7 @@ function Creatively() {
                                   width="100%"
                                   height="100%"
                                   alt={video.title}
-                                  className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105 h-screen"
+                                  className="object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105  h-screen"
                                 />}
                               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
                                 <p className="font-display text-xl/8 font-semibold tracking-wide text-white">
