@@ -38,7 +38,7 @@ const videos = [
     title: 'The ‘Icyivugo’ Commercial, 2023',
     category: 'Conceptualizing, script writing, casting, sound production, video production and editing, animation',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/v1692625893/Ndi_Rwema_TVC_cnftxc.mp4",
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,w_1280/v1692625893/Ndi_Rwema_TVC_cnftxc.mp4",
   },
   {
     title: 'Sanlam Repositioning Ceremony, 2020',
@@ -62,13 +62,13 @@ const videos = [
     title: 'Sanlam Rebranding Staff Event 2020',
     category: 'Planned,coordinated,and curated the Sanlam repositioning campaign',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,h_720/v1692885856/1._sanlam_launch_staff_event_highlights_360p_k4ylhz.mp4",
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,w_1280/v1692885856/1._sanlam_launch_staff_event_highlights_360p_k4ylhz.mp4",
   },
   {
     title: 'Sanlam Rebranding Public Event 2020',
     category: 'Planned,coordinated,and curated the Sanlam repositioning campaign',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/do91rofg8/video/upload/c_scale,h_720/v1693389966/2._Sanlam_Launch_Public_Event_Highlights-2_wvbru6.mp4",
+    videoUrl: "https://res.cloudinary.com/do91rofg8/video/upload/c_scale,w_1280/v1693389966/2._Sanlam_Launch_Public_Event_Highlights-2_wvbru6.mp4",
   },
   {
     title: 'Irembo corporate gifts, 2021',
@@ -85,13 +85,13 @@ const videos = [
     title: 'The Hatana Teaser Commercial, 2022',
     category: 'Conceptualizing, casting, script writing, sound production, video production and editing, animation',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/do91rofg8/video/upload/c_scale,h_720/v1693389952/hatana_teaser_video_without_coming_soon_540p_vynnz3.mp4",
+    videoUrl: "https://res.cloudinary.com/do91rofg8/video/upload/c_scale,w_1280/v1693389952/hatana_teaser_video_without_coming_soon_540p_vynnz3.mp4",
   },
   {
     title: 'The ‘Shoulder Tap’ Commercial, 2022',
     category: 'Conceptualizing, casting, script writing, sound production, video production and editing, animation',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,w_1280/v1692626422/Hatana_Teaser_Video_without_coming_soon_ljcyim.mp4",
+    videoUrl: "https://res.cloudinary.com/do91rofg8/video/upload/c_scale,w_1280/v1700570209/hatana_brd_commercial_v5_720p_bd9tip.mp4",
   },
   /*{
     title: 'The Wavumbuzi Award Ceremony, 2021',
@@ -121,7 +121,7 @@ const videos = [
     title: 'Inyange chocolate milk, 2019',
     category: 'Conceptualizing, casting, script writing,sound production,video production and editing, animation',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
-    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/v1692885854/inyange_chocolate_milk_v7_en_720p_mrlmc9.mp4",
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,w_1280/v1692885854/inyange_chocolate_milk_v7_en_720p_mrlmc9.mp4",
   },
   // Add more video objects...
 ];
@@ -296,7 +296,7 @@ Plot #588 Remera-Kisimenti</a>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Phone />
-                    <span className="font-light text-sm flex gap-2"><a href="tel:+250 791 570 011">+250 791 570 011</a>/<a href="tel:+250 788 319 228">+250 788 319 228</a></span>
+                    <span className="font-light text-sm flex gap-2"><a href="tel:+250788317528">+250 788 317 528</a>/<a href="tel:+250788319228">+250 788 319 228</a></span>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail />
@@ -304,19 +304,19 @@ Plot #588 Remera-Kisimenti</a>
                   </div>
                   <div className="relative">
                     <div className="flex space-x-6 items-center">
-                      <Link className="group" href="https://www.linkedin.com/in/yato-part-of-organic-inc-18179326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                      <Link className="group" target="_blank" href="https://www.linkedin.com/in/yato-part-of-organic-inc-18179326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                         <Linkedin />
                       </Link>
-                      <Link className="group" href="https://x.com/Yato_rw?t=QQ1tkFA12QVwztd4qFgRsg&s=09">
+                      <Link className="group" target="_blank" href="https://x.com/Yato_rw?t=QQ1tkFA12QVwztd4qFgRsg&s=09">
                         <Twitter />
                       </Link>
-                      <Link className="group" href="https://instagram.com/yato_rw">
+                      <Link className="group" target="_blank" href="https://instagram.com/yato_rw">
                         <Instagram />
                       </Link>
-                      <Link className="group" href="#">
+                      <Link className="group" target="_blank" href="#">
                         <Youtube />
                       </Link>
-                      <Link className="group" href="https://www.facebook.com/profile.php?id=100075556000580">
+                      <Link className="group" target="_blank" href="https://www.facebook.com/profile.php?id=100075556000580">
                         <Facebook />
                       </Link>
                     </div>

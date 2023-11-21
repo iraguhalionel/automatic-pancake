@@ -93,6 +93,9 @@ body {
 .has-scrolled {
   color: #000!important;
 }
+.has-scrolled div nav div a {
+  display: none;
+}
 
 .fadeIn {
   opacity: 0;
