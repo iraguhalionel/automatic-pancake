@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "@/components/mainLogo";
+import MainMenu from "@/components/MainMenu";
 
 class Contact extends React.Component{
   constructor(props) {
@@ -29,10 +30,11 @@ class Contact extends React.Component{
   render() {
     return (
     <section className="bg-white text-black min-h-screen">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex justify-content-center gap-20">
+      <MainMenu className="text-black" />
+          <div className="mx-auto px-4 sm:px-6 lg:px-32">
+            <div className="flex justify-between">
             <div>
-              <div className="col-lg-6 bg-white pt-8 pb-4 pt-lg-8">
+              <div className="col-lg-6 pt-8 pb-4 pt-lg-8">
                 <div className="row align-items-center justify-content-center">
                   <div className="col-10 flex flex-col">
                     <h1 className="text-4xl font-extrabold h1 font-weight-bolder mb-2 mb-lg-0 d-lg-block d-none">Muraho!</h1>
@@ -77,10 +79,9 @@ class Contact extends React.Component{
               </div>
             </div>
             <div>
-            <div className="col-lg-5 offset-1 order-lg-last order-first bg-white pt-8 pb-lg-4 pt-lg-8">
-              <div className="row">
+            <div className="col-lg-5 offset-1 order-lg-last order-first pt-8 pb-lg-4 pt-lg-8  h-full">
+              <div className="flex flex-col justify-between min-h-full ">
                 <div className="flex flex-col gap-4">
-
                   <div className="flex">
                     <span><i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 text-white"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></i></span>&nbsp;
                     <span className="font-size-xs">assistance@oi.rw</span>
@@ -93,16 +94,12 @@ class Contact extends React.Component{
                     <span><i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 text-white"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></i></span>&nbsp;
                     <span className="font-size-xs">Irembo House, 72 KN 5 Rd, Remera-Kisimenti</span>
                   </div>
-                  <div className="flex">
-                    <span><i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 text-white"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></i></span>&nbsp;
-                    <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="text-body font-size-xs">Irembo House, 72 KN 5 Rd, Remera-Kisimenti</a>
-                  </div>
                 </div>
                 <div className="col-12 pt-lg-15 d-none d-lg-block">
                   <div className="row">
-                    <div className="col-8">
+                    <div className="flex items-center gap-10">
                       <Logo className="text-black mr-4 w-3.5" />
-                      <img src="https://oi.rw/static/qrcode-bd3a7333dd80fa5f109269ad32bb0017.svg" className="img-fluid w-30" alt=""/>
+                      <img src="https://oi.rw/static/qrcode-bd3a7333dd80fa5f109269ad32bb0017.svg" className="w-24" alt=""/>
                     </div>
                   </div>
                 </div>

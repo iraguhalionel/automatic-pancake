@@ -300,7 +300,10 @@ Plot #588 Remera-Kisimenti</a>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail />
-                    <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw</a>
+                    <div className="flex flex-col">
+                      <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw </a>
+                      <Link className="font-light text-sm" href="/contact-us" >Fill the form</Link>
+                    </div>
                   </div>
                   <div className="relative">
                     <div className="flex space-x-6 items-center">
