@@ -35,6 +35,12 @@ const DynamicVideoPlayer = dynamic(() => import("../components/VideoHomepagePlay
 
 const videos = [
   {
+    title: 'EGF Ambuka Competition TVC',
+    category: 'Conceptualizing, script writing, casting, sound production, video production and editing, animation',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
+    videoUrl: "https://res.cloudinary.com/dyn4t1qng/video/upload/c_scale,w_1280/v1703150629/nfmnzl3jzyoobw7m0rzt.mp4",
+  },
+  {
     title: 'The ‘Icyivugo’ Commercial, 2023',
     category: 'Conceptualizing, script writing, casting, sound production, video production and editing, animation',
     thumbnailUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
