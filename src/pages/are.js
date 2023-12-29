@@ -31,7 +31,7 @@ function Are() {
       people: [
         {
           name: 'Brian Geza Hativatye',
-          role: 'Managing Director',
+          role: 'Events Management Director',
           image: { src: imageBrian },
         },
         {
@@ -56,7 +56,7 @@ function Are() {
         },*/
         {
           name: 'Umuhoza Sandrine Rita',
-          role: 'Logistics and Public Relations Director',
+          role: 'Acting Managing Director',
           image: { src: imageRita },
         },
       ],
