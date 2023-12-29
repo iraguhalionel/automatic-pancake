@@ -49,11 +49,11 @@ function Are() {
           role: 'Chief Finance Officer',
           image: { src: imageJules },
         },
-        {
+        /*{
           name: 'Kessy Mugabo Kayiganwa',
           role: 'Strategic Comms Director',
           image: { src: imageMugabo },
-        },
+        },*/
         {
           name: 'Umuhoza Sandrine Rita',
           role: 'Logistics and Public Relations Director',
