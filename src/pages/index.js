@@ -322,9 +322,6 @@ Plot #588 Remera-Kisimenti</a>
                       <Link className="group" target="_blank" href="https://instagram.com/yato_rw">
                         <Instagram />
                       </Link>
-                      <Link className="group" target="_blank" href="#">
-                        <Youtube />
-                      </Link>
                       <Link className="group" target="_blank" href="https://www.facebook.com/profile.php?id=100075556000580">
                         <Facebook />
                       </Link>
