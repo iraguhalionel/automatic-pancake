@@ -108,8 +108,8 @@ function We() {
                   </button>
               </div>*/}
               <div className="flex flex-row gap-x-8 font-bold text-sm justify-center lg:pt-8 mt-4 text-black">
-                  <Link href="#" >Company Profile</Link>
-                  <Link href="#" >Brand Identity</Link>
+                  <Link href="/documents/yato-company-profile-2023.pdf" >Company Profile</Link>
+                  <Link href="/documents/yato-brand-identity.pdf" >Brand Identity</Link>
               </div>
           </div>
         </div>
