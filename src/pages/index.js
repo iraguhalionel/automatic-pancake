@@ -21,7 +21,6 @@ import NavigationMenu from "@/components/MainMenuIndex";
 import {Facebook, Imigongo, Instagram, Linkedin, Location, Mail, Phone, Twitter, Youtube} from "@/images/Icons";
 import Link from "next/link";
 import DarkLogo from "@/components/darkLogo";
-import Hatana from "./../images/Hatana_Teaser_Video_without_coming_soon.mp4"
 
 import VideoModal from '@/components/VideoModal';
 import {FadeIn, FadeInStagger} from "@/components/FadeIn";

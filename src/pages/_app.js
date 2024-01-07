@@ -4,13 +4,8 @@ import dynamic from 'next/dynamic'
 import '@/styles/globals.css'
 import "@/styles/fonts.css"
 
-import { Nunito_Sans } from 'next/font/google';
 import Emblem from "@/components/emblem";
 
-const nunitoSans = Nunito_Sans({
-  subsets: ['latin'],
-  weight: ['200', '300', '400', '600', '700', '800', '900']
-});
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -22,8 +17,9 @@ export default function App({ Component, pageProps }) {
     <>
       <style jsx global>
         {`
+          @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
           :root {
-            --nunitoSans-font: ${nunitoSans.style.fontFamily};
+            --nunitoSans-font: 'Nunito Sans', sans-serif;
           }
         `}
       </style>
