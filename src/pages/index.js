@@ -189,11 +189,11 @@ function Home() {
         <div>
           <main>
             <section className="bg-white red">
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative py-24">
+              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative lg:py-24">
                 <div className="mx-auto max-w-2xl lg:max-w-7xl lg:px-12" ref={paragraph2}>
-                  <div className="panel flex lg:flex-row flex-col items-center lg:justify-between gap-y-8">
+                  <div className="panel  min-h-screen flex lg:flex-row flex-col items-center lg:justify-between justify-center lg:gap-y-8 gap-y-16">
                     <div className="">
-                      <DarkLogo className="w-32" />
+                      <DarkLogo />
                     </div>
                     <div className="">
                       <h3 className="-mt-8 text-black text-justify font-extralight lg:w-[376px]">
@@ -293,7 +293,7 @@ function Home() {
             <section className="snap-start bg-black text-white">
 
               <div className="mx-auto max-w-2xl lg:max-w-7xl">
-                <div className="flex gap-8 mx-8 items-center justify-between py-6 grid-cols-2 lg:grid-cols-none">
+                <div className="flex gap-8 mx-8 lg:items-center lg:flex-row flex-col justify-between py-6 grid-cols-2 lg:grid-cols-none">
                   <div className="flex items-center space-x-4">
                     <Location />
                     <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm">Irembo House, 72 KN 5 Rd,<br />
@@ -307,10 +307,10 @@ Plot #588 Remera-Kisimenti</a>
                     <Mail />
                     <div className="flex flex-col">
                       <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw </a>
-                      <Link className="font-light text-sm" href="/contact-us" >Fill the form</Link>
+                      <Link className="font-light text-sm" href="/contact-us" >Connect with us</Link>
                     </div>
                   </div>
-                  <div className="relative">
+                  <div className="relative ml-8">
                     <div className="flex space-x-6 items-center">
                       <Link className="group" target="_blank" href="https://www.linkedin.com/in/yato-part-of-organic-inc-18179326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                         <Linkedin />

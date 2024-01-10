@@ -90,10 +90,10 @@ function We() {
         <div className="py-8">
           <div className="mt-8 text-dark flex flex-col gap-3">
               <p className="uppercase font-bold">About Us</p>
-            <p className="mb-8 fadeOnScroll text-about text-justify">
+            <p className="mb-8 fadeOnScroll text-about lg:text-justify">
                 We searched and discovered that businesses are looking for unique ways to better their brands
                 from creative communicators who wear multiple hats; branding, events, and strategy.
-</p><p className="mb-8 text-justify fadeOnScroll text-about">
+</p><p className="mb-8 lg:text-justify fadeOnScroll text-about">
                 That is why we are here, to provide our clients with timely delivery and guarantee exceptional quality.
                 Our journey is organic and innovative, with each new day, we are ready to face and embrace
                 new challenges, ensuring that our unique and creative abilities continue to grow.
@@ -116,9 +116,8 @@ function We() {
       </div>
     </section>
   <section className="snap-start bg-black text-white">
-
     <div className="mx-auto max-w-2xl lg:max-w-7xl">
-      <div className="flex gap-8 mx-8 items-center justify-between py-6 grid-cols-2 lg:grid-cols-none">
+      <div className="flex gap-8 mx-8 lg:items-center lg:flex-row flex-col justify-between py-6 grid-cols-2 lg:grid-cols-none">
         <div className="flex items-center space-x-4">
           <Location />
           <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm">Irembo House, 72 KN 5 Rd,<br />
@@ -132,10 +131,10 @@ function We() {
           <Mail />
           <div className="flex flex-col">
             <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw </a>
-            <Link className="font-light text-sm" href="/contact-us" >Fill the form</Link>
+            <Link className="font-light text-sm" href="/contact-us" >Connect with us</Link>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative ml-8">
           <div className="flex space-x-6 items-center">
             <Link className="group" target="_blank" href="https://www.linkedin.com/in/yato-part-of-organic-inc-18179326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               <Linkedin />
@@ -153,10 +152,6 @@ function We() {
         </div>
       </div>
     </div>
-    {/*<Imigongo
-                className="bg-cover w-screen h-[24px]  bg-black opacity-20"
-              />*/}
-
   </section>
   </>
   );

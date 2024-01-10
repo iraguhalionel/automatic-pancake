@@ -329,9 +329,8 @@ function Yours() {
       </div>
     </section>
   <section className="snap-start bg-black text-white">
-
     <div className="mx-auto max-w-2xl lg:max-w-7xl">
-      <div className="flex gap-8 mx-8 items-center justify-between py-6 grid-cols-2 lg:grid-cols-none">
+      <div className="flex gap-8 mx-8 lg:items-center lg:flex-row flex-col justify-between py-6 grid-cols-2 lg:grid-cols-none">
         <div className="flex items-center space-x-4">
           <Location />
           <a href="https://goo.gl/maps/9ze14VFLyk6tWzCZ9" className="font-light text-sm">Irembo House, 72 KN 5 Rd,<br />
@@ -345,10 +344,10 @@ function Yours() {
           <Mail />
           <div className="flex flex-col">
             <a href="mailto:ikaze@yato.rw" className="font-light text-sm">ikaze@yato.rw </a>
-            <Link className="font-light text-sm" href="/contact-us" >Fill the form</Link>
+            <Link className="font-light text-sm" href="/contact-us" >Connect with us</Link>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative ml-8">
           <div className="flex space-x-6 items-center">
             <Link className="group" target="_blank" href="https://www.linkedin.com/in/yato-part-of-organic-inc-18179326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               <Linkedin />
@@ -366,10 +365,6 @@ function Yours() {
         </div>
       </div>
     </div>
-    {/*<Imigongo
-                className="bg-cover w-screen h-[24px]  bg-black opacity-20"
-              />*/}
-
   </section>
   </>
   );
