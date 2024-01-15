@@ -113,3 +113,7 @@ body {
   line-height: 3.8rem;
 
 }
+
+video {
+  pointer-events: none;
+}
